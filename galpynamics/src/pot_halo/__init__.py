@@ -3,6 +3,7 @@
 from .isothermal_halo import isothermal_halo
 from .NFW_halo import NFW_halo
 from .alfabeta_halo import alfabeta_halo
+from .truncated_alfabeta_halo import truncated_alfabeta_halo
 from .hernquist_halo import hernquist_halo
 from .deVacouler_like_halo import deVacouler_like_halo
 from .plummer_halo import plummer_halo

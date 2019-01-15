@@ -107,6 +107,9 @@ infw_ext=Extension('galpynamics.src.pot_halo.pot_c_ext.nfw_halo',sources=infw)
 iab=['galpynamics/src/pot_halo/pot_c_ext/alfabeta_halo.pyx']
 iab_ext=Extension('galpynamics.src.pot_halo.pot_c_ext.alfabeta_halo',sources=iab,libraries=cy_gsl_lib,library_dirs=[cy_gsl_lib_dic],include_dirs=[cy_gsl_inc_cy])
 
+itab=['galpynamics/src/pot_halo/pot_c_ext/truncated_alfabeta_halo.pyx']
+itab_ext=Extension('galpynamics.src.pot_halo.pot_c_ext.truncated_alfabeta_halo',sources=itab,libraries=cy_gsl_lib,library_dirs=[cy_gsl_lib_dic],include_dirs=[cy_gsl_inc_cy])
+
 ph=['galpynamics/src/pot_halo/pot_c_ext/plummer_halo.pyx']
 ph_ext=Extension('galpynamics.src.pot_halo.pot_c_ext.plummer_halo',sources=ph)
 
@@ -145,7 +148,7 @@ vcirc_ext=Extension('galpynamics.src.pot_disc.pot_c_ext.integrand_vcirc', source
                      #)
 
 
-ext_modules=cythonize([gh_ext,ih_ext,infw_ext,gd_ext,rd_ext,fd_ext,iab_ext,ph_ext,eh_ext,vh_ext,exh_ext,zd_ext,vcirc_ext])
+ext_modules=cythonize([gh_ext,ih_ext,infw_ext,gd_ext,rd_ext,fd_ext,iab_ext,itab_ext,ph_ext,eh_ext,vh_ext,exh_ext,zd_ext,vcirc_ext])
 
 setup(
 		name='galpynamics',

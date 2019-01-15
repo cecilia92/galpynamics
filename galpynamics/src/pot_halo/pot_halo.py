@@ -2,10 +2,12 @@ from __future__ import division, print_function
 from .pot_c_ext.isothermal_halo import potential_iso,  vcirc_iso
 from .pot_c_ext.nfw_halo import potential_nfw, vcirc_nfw
 from .pot_c_ext.alfabeta_halo import potential_alfabeta, vcirc_alfabeta
+from .pot_c_ext.truncated_alfabeta_halo import potential_truncated_alfabeta, vcirc_truncated_alfabeta
 from .pot_c_ext.plummer_halo import potential_plummer, vcirc_plummer
 from .pot_c_ext.einasto_halo import potential_einasto, vcirc_einasto
 from .pot_c_ext.valy_halo import potential_valy, vcirc_valy
 from .pot_c_ext.exponential_halo import potential_exponential, vcirc_exponential
+from .pot_c_ext.general_halo import potential_general, vcirc_general
 import multiprocessing as mp
 from ..pardo.Pardo import ParDo
 from ..utility import cartesian
